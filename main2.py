@@ -7,20 +7,20 @@ sample_cfg = [
     {
         "pickle_name": "dog_cat_sim_dict",
         "sample_dirs": [
-            "./downloads/cat_sample/",
-            "./downloads/dog_sample/",
-            "./downloads/dog_cat_sample/"
+            "./samples/cat_sample/",
+            "./samples/dog_sample/",
+            "./samples/dog_cat_sample/"
         ]
     },
     {
         "pickle_name": "youtube_sim_dict",
         "sample_dirs": [
-            "./downloads/youtube_sample/"
+            "./samples/youtube_sample/"
         ]
     },
     {
         "sample_dirs": [
-            "./downloads/iron_sample/"
+            "./samples/iron_sample/"
         ],
         "npy": "npy/iron.npy",
         "dim": 3,
@@ -28,7 +28,7 @@ sample_cfg = [
     },
     {
         "sample_dirs": [
-            "./downloads/new_dog_cat_sample/"
+            "./samples/new_dog_cat_sample/"
         ],
         "npy": "npy/dog_n_cat_asdf.npy",
         "img_cnt": 30
