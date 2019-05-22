@@ -1,5 +1,11 @@
 # CS423
 
+# Setting
+Python 3.7
+```
+pip install -r requirements.txt
+```
+
 # main2.py usage
 
 1. 새로운 데이터 셋이 추가되면 sample_cfg 리스트에 추가를 해주세요.
