@@ -32,11 +32,20 @@ sample_cfg = [
         ],
         "npy": "npy/dog_n_cat_asdf.npy",
         "img_cnt": 30
+    },
+    {
+        "sample_dirs": [
+            "./dog_n_cat/"
+        ],
+        "npy": "npy/30.npy",
+        "dim": 1,
+        "img_cnt": 30
+
     }
 ]
 
 # USAGE: select sample to use
-sample_idx = 3
+sample_idx = 4
 
 cfg = sample_cfg[sample_idx]
 sample_dirs = cfg["sample_dirs"]
@@ -93,8 +102,8 @@ else:
 
 rank_list_per_prop = []
 for i in range(prop_dim):
-    #rank_list = get_ranks_by_dict(imgs, sim_dict_lst[i], threshold=0.01, max_loop=100)
     rank_list = get_weighted_ranks_by_dict(imgs, sim_dict_lst[i], df=0.5, max_loop=10)
+   # rank_list = get_ranks_by_dict(imgs, sim_dict_lst[i], threshold=0.8, max_loop=100)
     _max_idx = 0
     _max = rank_list[0]
     for i in range(len(rank_list)):
@@ -104,6 +113,10 @@ for i in range(prop_dim):
 
     # print(_max_idx, _max, imgs[_max_idx])
     temp_list = list(reversed(sorted(rank_list)))[:10]
+
     for val in temp_list:
-        print(imgs[rank_list.index(val)])
+        print(val)
+        for i in range(len(rank_list)):
+            if(rank_list[i]==val):
+                print(imgs[i])      
     rank_list_per_prop.append(rank_list)
