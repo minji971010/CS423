@@ -32,11 +32,20 @@ sample_cfg = [
         ],
         "npy": "npy/dog_n_cat_asdf.npy",
         "img_cnt": 30
+    },
+    {
+        "sample_dirs": [
+            "./dog_n_cat/"
+        ],
+        "npy": "npy/dog_n_cat_1.npy",
+        "dim": 2,
+        "img_cnt": 30
+
     }
 ]
 
 # USAGE: select sample to use
-sample_idx = 3
+sample_idx = 4
 
 cfg = sample_cfg[sample_idx]
 sample_dirs = cfg["sample_dirs"]
