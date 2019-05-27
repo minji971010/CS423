@@ -1,5 +1,5 @@
 from img_similarity import get_similarity_dict
-from pagerank import get_ranks_by_dict, isPairExist
+from pagerank import get_ranks_by_dict, get_weighted_ranks_by_dict, isPairExist
 import numpy as np
 import os, pickle
 
@@ -93,7 +93,8 @@ else:
 
 rank_list_per_prop = []
 for i in range(prop_dim):
-    rank_list = get_ranks_by_dict(imgs, sim_dict_lst[i], threshold=0.01, max_loop=100)
+    #rank_list = get_ranks_by_dict(imgs, sim_dict_lst[i], threshold=0.01, max_loop=100)
+    rank_list = get_weighted_ranks_by_dict(imgs, sim_dict_lst[i], df=0.5, max_loop=10)
     _max_idx = 0
     _max = rank_list[0]
     for i in range(len(rank_list)):

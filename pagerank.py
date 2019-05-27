@@ -53,6 +53,33 @@ def get_ranks_by_dict(img_list, sim_dict, threshold=0.2, df=0.85, max_loop=100):
     print ("final rank_list : ", rank_list)
     return rank_list
 
+def get_weighted_ranks_by_dict(img_list, sim_dict, df=0.85, max_loop=100):
+    img_num = len(img_list)
+
+    # rank_list[i] : initial rank of image_i == 1/img_num
+    rank_list = [1.0 / img_num] * img_num
+    
+    # loop : update ranks
+    cur_loop = 0
+    while cur_loop < max_loop:
+        # print ("loop %d : rank_list = " % cur_loop, rank_list)
+        new_rank_list = []
+        for i in range(img_num):
+            ref_rank_sum = 0 # sigma_{j != i}PR(j) * weight(i, j)
+            for j in range(img_num):
+                if j == i:
+                    continue
+                _i, _j = (i, j) if i < j else (j, i)
+                ref_rank_sum = rank_list[j] * sim_dict[(_i, _j)]
+            new_rank = (1 - df) + df * ref_rank_sum
+            new_rank_list.append(new_rank)
+        rank_list = new_rank_list
+        cur_loop += 1
+
+    print ("loop done : %d loops" % max_loop)
+    print ("final rank_list : ", rank_list)
+    return rank_list
+
 def isPairExist(pair, d):
     return pair in d or (pair[1], pair[0]) in d
 
