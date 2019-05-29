@@ -1,0 +1,889 @@
+Last login: Sun May 26 22:17:26 on ttys000
+iminjiui-MacBookPro:~ leemin._.ji$ cd desktop
+iminjiui-MacBookPro:desktop leemin._.ji$ cd CS423
+iminjiui-MacBookPro:CS423 leemin._.ji$ git pull
+Already up to date.
+iminjiui-MacBookPro:CS423 leemin._.ji$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   main2.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	circle_n_square/
+	dog_n_cat/
+	image_similarity.py
+	npy/dog_n_cat_1.npy
+
+no changes added to commit (use "git add" and/or "git commit -a")
+iminjiui-MacBookPro:CS423 leemin._.ji$ git add .
+iminjiui-MacBookPro:CS423 leemin._.ji$ git commit -m "add image_similarity.py"
+[master da31197] add image_similarity.py
+ 63 files changed, 198 insertions(+), 1 deletion(-)
+ create mode 100644 circle_n_square/1.jpg
+ create mode 100644 circle_n_square/10.jpg
+ create mode 100644 circle_n_square/11.jpg
+ create mode 100644 circle_n_square/12.jpg
+ create mode 100644 circle_n_square/13.jpg
+ create mode 100644 circle_n_square/14.jpg
+ create mode 100644 circle_n_square/15.jpg
+ create mode 100644 circle_n_square/16.jpg
+ create mode 100644 circle_n_square/17.jpg
+ create mode 100644 circle_n_square/18.jpg
+ create mode 100644 circle_n_square/19.jpg
+ create mode 100644 circle_n_square/2.jpg
+ create mode 100644 circle_n_square/20.jpg
+ create mode 100644 circle_n_square/21.jpg
+ create mode 100644 circle_n_square/22.jpg
+ create mode 100644 circle_n_square/23.jpg
+ create mode 100644 circle_n_square/24.jpg
+ create mode 100644 circle_n_square/25.jpg
+ create mode 100644 circle_n_square/26.jpg
+ create mode 100644 circle_n_square/27.jpg
+ create mode 100644 circle_n_square/28.jpg
+ create mode 100644 circle_n_square/29.jpg
+ create mode 100644 circle_n_square/3.jpg
+ create mode 100644 circle_n_square/30.jpg
+ create mode 100644 circle_n_square/4.jpg
+ create mode 100644 circle_n_square/5.jpg
+ create mode 100644 circle_n_square/6.jpg
+ create mode 100644 circle_n_square/7.jpg
+ create mode 100644 circle_n_square/8.jpg
+ create mode 100644 circle_n_square/9.jpg
+ create mode 100644 dog_n_cat/01.jpg
+ create mode 100644 dog_n_cat/02.jpg
+ create mode 100644 dog_n_cat/03.jpg
+ create mode 100644 dog_n_cat/04.jpg
+ create mode 100644 dog_n_cat/05.jpg
+ create mode 100644 dog_n_cat/10.jpeg
+ create mode 100644 dog_n_cat/11.jpg
+ create mode 100644 dog_n_cat/12.jpeg
+ create mode 100644 dog_n_cat/13.jpg
+ create mode 100644 dog_n_cat/14.jpg
+ create mode 100644 dog_n_cat/15.jpg
+ create mode 100644 dog_n_cat/16.jpeg
+ create mode 100644 dog_n_cat/17.jpg
+ create mode 100644 dog_n_cat/18.jpg
+ create mode 100644 dog_n_cat/19.jpg
+ create mode 100644 dog_n_cat/20.jpg
+ create mode 100644 dog_n_cat/21.jpg
+ create mode 100644 dog_n_cat/22.jpg
+ create mode 100644 dog_n_cat/23.jpg
+ create mode 100644 dog_n_cat/24.jpg
+ create mode 100644 dog_n_cat/25.jpg
+ create mode 100644 dog_n_cat/26.jpeg
+ create mode 100644 dog_n_cat/27.jpg
+ create mode 100644 dog_n_cat/28.jpg
+ create mode 100644 dog_n_cat/29.jpg
+ create mode 100644 dog_n_cat/30.jpg
+ create mode 100644 dog_n_cat/6.jpg
+ create mode 100644 dog_n_cat/7.jpg
+ create mode 100644 dog_n_cat/8.jpg
+ create mode 100644 dog_n_cat/9.jpeg
+ create mode 100644 image_similarity.py
+ create mode 100644 npy/dog_n_cat_1.npy
+iminjiui-MacBookPro:CS423 leemin._.ji$ git push origin master
+Enumerating objects: 71, done.
+Counting objects: 100% (71/71), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (68/68), done.
+Writing objects: 100% (68/68), 9.93 MiB | 1.70 MiB/s, done.
+Total 68 (delta 3), reused 30 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/minji971010/CS423.git
+   ea17fa5..da31197  master -> master
+iminjiui-MacBookPro:CS423 leemin._.ji$ python3 main2.py
+['./dog_n_cat/10.jpeg', './dog_n_cat/26.jpeg', './dog_n_cat/8.jpg', './dog_n_cat/14.jpg', './dog_n_cat/28.jpg', './dog_n_cat/29.jpg', './dog_n_cat/15.jpg', './dog_n_cat/01.jpg', './dog_n_cat/17.jpg', './dog_n_cat/03.jpg', './dog_n_cat/16.jpeg', './dog_n_cat/02.jpg', './dog_n_cat/13.jpg', './dog_n_cat/05.jpg', './dog_n_cat/11.jpg', './dog_n_cat/04.jpg', './dog_n_cat/21.jpg', './dog_n_cat/20.jpg', './dog_n_cat/22.jpg', './dog_n_cat/23.jpg', './dog_n_cat/27.jpg', './dog_n_cat/18.jpg', './dog_n_cat/24.jpg', './dog_n_cat/30.jpg', './dog_n_cat/9.jpeg', './dog_n_cat/25.jpg', './dog_n_cat/19.jpg', './dog_n_cat/12.jpeg', './dog_n_cat/7.jpg', './dog_n_cat/6.jpg']
+num_list :  [29, 29, 29, 28, 29, 29, 29, 29, 29, 29, 29, 29, 29, 28, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29]
+loop done : 100 loops
+final rank_list :  [0.03462158468228967, 0.03462158468228967, 0.03462158468228967, 0.03377071923593547, 0.03462158468228967, 0.03462158468228967, 0.03462158468228967, 0.03462158468228967, 0.03462158468228967, 0.03462158468228967, 0.03462158468228967, 0.03462158468228967, 0.03462158468228967, 0.03377071923593547, 0.03462158468228967, 0.03462158468228967, 0.03462158468228967, 0.03462158468228967, 0.03462158468228967, 0.03462158468228967, 0.03462158468228967, 0.03462158468228967, 0.03462158468228967, 0.03462158468228967, 0.03462158468228967, 0.03462158468228967, 0.03462158468228967, 0.03462158468228967, 0.03462158468228967, 0.03462158468228967]
+./dog_n_cat/10.jpeg
+./dog_n_cat/10.jpeg
+./dog_n_cat/10.jpeg
+./dog_n_cat/10.jpeg
+./dog_n_cat/10.jpeg
+./dog_n_cat/10.jpeg
+./dog_n_cat/10.jpeg
+./dog_n_cat/10.jpeg
+./dog_n_cat/10.jpeg
+./dog_n_cat/10.jpeg
+iminjiui-MacBookPro:CS423 leemin._.ji$ python3 main2.py
+['./dog_n_cat/10.jpeg', './dog_n_cat/26.jpeg', './dog_n_cat/8.jpg', './dog_n_cat/14.jpg', './dog_n_cat/28.jpg', './dog_n_cat/29.jpg', './dog_n_cat/15.jpg', './dog_n_cat/01.jpg', './dog_n_cat/17.jpg', './dog_n_cat/03.jpg', './dog_n_cat/16.jpeg', './dog_n_cat/02.jpg', './dog_n_cat/13.jpg', './dog_n_cat/05.jpg', './dog_n_cat/11.jpg', './dog_n_cat/04.jpg', './dog_n_cat/21.jpg', './dog_n_cat/20.jpg', './dog_n_cat/22.jpg', './dog_n_cat/23.jpg', './dog_n_cat/27.jpg', './dog_n_cat/18.jpg', './dog_n_cat/24.jpg', './dog_n_cat/30.jpg', './dog_n_cat/9.jpeg', './dog_n_cat/25.jpg', './dog_n_cat/19.jpg', './dog_n_cat/12.jpeg', './dog_n_cat/7.jpg', './dog_n_cat/6.jpg']
+num_list :  [19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29]
+loop done : 100 loops
+final rank_list :  [0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816]
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+iminjiui-MacBookPro:CS423 leemin._.ji$ python3 main2.py
+['./dog_n_cat/10.jpeg', './dog_n_cat/26.jpeg', './dog_n_cat/8.jpg', './dog_n_cat/14.jpg', './dog_n_cat/28.jpg', './dog_n_cat/29.jpg', './dog_n_cat/15.jpg', './dog_n_cat/01.jpg', './dog_n_cat/17.jpg', './dog_n_cat/03.jpg', './dog_n_cat/16.jpeg', './dog_n_cat/02.jpg', './dog_n_cat/13.jpg', './dog_n_cat/05.jpg', './dog_n_cat/11.jpg', './dog_n_cat/04.jpg', './dog_n_cat/21.jpg', './dog_n_cat/20.jpg', './dog_n_cat/22.jpg', './dog_n_cat/23.jpg', './dog_n_cat/27.jpg', './dog_n_cat/18.jpg', './dog_n_cat/24.jpg', './dog_n_cat/30.jpg', './dog_n_cat/9.jpeg', './dog_n_cat/25.jpg', './dog_n_cat/19.jpg', './dog_n_cat/12.jpeg', './dog_n_cat/7.jpg', './dog_n_cat/6.jpg']
+num_list :  [19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29]
+loop done : 10000 loops
+final rank_list :  [0.041277260625992976, 0.041277260625992976, 0.041277260625992976, 0.041277260625992976, 0.041277260625992976, 0.041277260625992976, 0.041277260625992976, 0.041277260625992976, 0.041277260625992976, 0.041277260625992976, 0.041277260625992976, 0.041277260625992976, 0.041277260625992976, 0.041277260625992976, 0.041277260625992976, 0.041277260625992976, 0.041277260625992976, 0.041277260625992976, 0.041277260625992976, 0.041277260625992976, 0.05719139526344021, 0.05719139526344021, 0.05719139526344021, 0.05719139526344021, 0.05719139526344021, 0.05719139526344021, 0.05719139526344021, 0.05719139526344021, 0.05719139526344021, 0.05719139526344021]
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+iminjiui-MacBookPro:CS423 leemin._.ji$ python3 main2.py
+['./dog_n_cat/10.jpeg', './dog_n_cat/26.jpeg', './dog_n_cat/8.jpg', './dog_n_cat/14.jpg', './dog_n_cat/28.jpg', './dog_n_cat/29.jpg', './dog_n_cat/15.jpg', './dog_n_cat/01.jpg', './dog_n_cat/17.jpg', './dog_n_cat/03.jpg', './dog_n_cat/16.jpeg', './dog_n_cat/02.jpg', './dog_n_cat/13.jpg', './dog_n_cat/05.jpg', './dog_n_cat/11.jpg', './dog_n_cat/04.jpg', './dog_n_cat/21.jpg', './dog_n_cat/20.jpg', './dog_n_cat/22.jpg', './dog_n_cat/23.jpg', './dog_n_cat/27.jpg', './dog_n_cat/18.jpg', './dog_n_cat/24.jpg', './dog_n_cat/30.jpg', './dog_n_cat/9.jpeg', './dog_n_cat/25.jpg', './dog_n_cat/19.jpg', './dog_n_cat/12.jpeg', './dog_n_cat/7.jpg', './dog_n_cat/6.jpg']
+num_list :  [13, 10, 11, 15, 10, 12, 9, 13, 10, 12, 11, 12, 10, 11, 13, 11, 9, 13, 11, 12, 6, 8, 8, 5, 4, 5, 10, 11, 5, 8]
+loop done : 100 loops
+final rank_list :  [0.14543292663401677, 0.10927618434272951, 0.11782203585984909, 0.16480659512320972, 0.10887262690017467, 0.13170698223221255, 0.10056976866823855, 0.14649480581622973, 0.10840318394168576, 0.1310948588291712, 0.11770221558843516, 0.12156068942970052, 0.10477834672929524, 0.1128191250053425, 0.13407605180580806, 0.11484295831079329, 0.09615203812666676, 0.13482550951231506, 0.11619007557300783, 0.1231210394510682, 0.0804445918172651, 0.10836468857090509, 0.09565460879752134, 0.07788350896474242, 0.07782677260968515, 0.07985441076159085, 0.10842466764240224, 0.12585866582966038, 0.07694634071382245, 0.09522926138763571]
+./dog_n_cat/14.jpg
+./dog_n_cat/01.jpg
+./dog_n_cat/10.jpeg
+./dog_n_cat/20.jpg
+./dog_n_cat/11.jpg
+./dog_n_cat/29.jpg
+./dog_n_cat/03.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/23.jpg
+./dog_n_cat/02.jpg
+iminjiui-MacBookPro:CS423 leemin._.ji$ python3 main2.py
+['./dog_n_cat/10.jpeg', './dog_n_cat/26.jpeg', './dog_n_cat/8.jpg', './dog_n_cat/14.jpg', './dog_n_cat/28.jpg', './dog_n_cat/29.jpg', './dog_n_cat/15.jpg', './dog_n_cat/01.jpg', './dog_n_cat/17.jpg', './dog_n_cat/03.jpg', './dog_n_cat/16.jpeg', './dog_n_cat/02.jpg', './dog_n_cat/13.jpg', './dog_n_cat/05.jpg', './dog_n_cat/11.jpg', './dog_n_cat/04.jpg', './dog_n_cat/21.jpg', './dog_n_cat/20.jpg', './dog_n_cat/22.jpg', './dog_n_cat/23.jpg', './dog_n_cat/27.jpg', './dog_n_cat/18.jpg', './dog_n_cat/24.jpg', './dog_n_cat/30.jpg', './dog_n_cat/9.jpeg', './dog_n_cat/25.jpg', './dog_n_cat/19.jpg', './dog_n_cat/12.jpeg', './dog_n_cat/7.jpg', './dog_n_cat/6.jpg']
+num_list :  [19, 18, 18, 18, 19, 17, 17, 19, 18, 17, 18, 18, 19, 18, 17, 17, 18, 16, 19, 15, 27, 25, 25, 24, 25, 25, 25, 27, 25, 23]
+loop done : 100 loops
+final rank_list :  [0.04813720335568149, 0.04648529382873311, 0.046463297647580476, 0.04649554469474278, 0.04813720335568149, 0.04485656755488798, 0.04485911740319214, 0.04813720335568149, 0.04649475054616532, 0.04491973030970001, 0.04700416807383305, 0.046997189742441076, 0.04864083783132144, 0.04700416807383305, 0.045419081217005844, 0.045395363631976056, 0.046993127258345674, 0.04384014094717636, 0.04864083783132144, 0.04234207430322793, 0.06386487659128284, 0.05996971575519672, 0.06016237149498821, 0.05864136909961989, 0.059945255459959816, 0.059754778587322525, 0.06026098883297047, 0.0640851016988136, 0.06009484292055303, 0.05606340674193534]
+./dog_n_cat/12.jpeg
+./dog_n_cat/27.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/7.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/6.jpg
+iminjiui-MacBookPro:CS423 leemin._.ji$ python3 main2.py
+['./dog_n_cat/10.jpeg', './dog_n_cat/26.jpeg', './dog_n_cat/8.jpg', './dog_n_cat/14.jpg', './dog_n_cat/28.jpg', './dog_n_cat/29.jpg', './dog_n_cat/15.jpg', './dog_n_cat/01.jpg', './dog_n_cat/17.jpg', './dog_n_cat/03.jpg', './dog_n_cat/16.jpeg', './dog_n_cat/02.jpg', './dog_n_cat/13.jpg', './dog_n_cat/05.jpg', './dog_n_cat/11.jpg', './dog_n_cat/04.jpg', './dog_n_cat/21.jpg', './dog_n_cat/20.jpg', './dog_n_cat/22.jpg', './dog_n_cat/23.jpg', './dog_n_cat/27.jpg', './dog_n_cat/18.jpg', './dog_n_cat/24.jpg', './dog_n_cat/30.jpg', './dog_n_cat/9.jpeg', './dog_n_cat/25.jpg', './dog_n_cat/19.jpg', './dog_n_cat/12.jpeg', './dog_n_cat/7.jpg', './dog_n_cat/6.jpg']
+num_list :  [19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29]
+loop done : 100 loops
+final rank_list :  [0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816]
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+iminjiui-MacBookPro:CS423 leemin._.ji$ python3 main2.py
+['./dog_n_cat/10.jpeg', './dog_n_cat/26.jpeg', './dog_n_cat/8.jpg', './dog_n_cat/14.jpg', './dog_n_cat/28.jpg', './dog_n_cat/29.jpg', './dog_n_cat/15.jpg', './dog_n_cat/01.jpg', './dog_n_cat/17.jpg', './dog_n_cat/03.jpg', './dog_n_cat/16.jpeg', './dog_n_cat/02.jpg', './dog_n_cat/13.jpg', './dog_n_cat/05.jpg', './dog_n_cat/11.jpg', './dog_n_cat/04.jpg', './dog_n_cat/21.jpg', './dog_n_cat/20.jpg', './dog_n_cat/22.jpg', './dog_n_cat/23.jpg', './dog_n_cat/27.jpg', './dog_n_cat/18.jpg', './dog_n_cat/24.jpg', './dog_n_cat/30.jpg', './dog_n_cat/9.jpeg', './dog_n_cat/25.jpg', './dog_n_cat/19.jpg', './dog_n_cat/12.jpeg', './dog_n_cat/7.jpg', './dog_n_cat/6.jpg']
+num_list :  [20, 19, 19, 21, 20, 20, 20, 20, 21, 21, 20, 20, 20, 20, 20, 21, 20, 19, 19, 22, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29]
+loop done : 100 loops
+final rank_list :  [0.04022636283422055, 0.038881344981057275, 0.038881344981057275, 0.04155567907041713, 0.04020072647035001, 0.04022636283422055, 0.040178432960812825, 0.04022636283422055, 0.04155567907041713, 0.04157805142330218, 0.04023403602203369, 0.04023403602203369, 0.04020755656013179, 0.04023403602203369, 0.04020755656013179, 0.04158545065132845, 0.04020842519093925, 0.03888931388618412, 0.03888931388618412, 0.042964178863523834, 0.05341203569480396, 0.05341203569480396, 0.05341203569480396, 0.05341203569480396, 0.05341203569480396, 0.05341203569480396, 0.05341203569480396, 0.05341203569480396, 0.05341203569480396, 0.05341203569480396]
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+iminjiui-MacBookPro:CS423 leemin._.ji$ python3 main2.py
+['./dog_n_cat/10.jpeg', './dog_n_cat/26.jpeg', './dog_n_cat/8.jpg', './dog_n_cat/14.jpg', './dog_n_cat/28.jpg', './dog_n_cat/29.jpg', './dog_n_cat/15.jpg', './dog_n_cat/01.jpg', './dog_n_cat/17.jpg', './dog_n_cat/03.jpg', './dog_n_cat/16.jpeg', './dog_n_cat/02.jpg', './dog_n_cat/13.jpg', './dog_n_cat/05.jpg', './dog_n_cat/11.jpg', './dog_n_cat/04.jpg', './dog_n_cat/21.jpg', './dog_n_cat/20.jpg', './dog_n_cat/22.jpg', './dog_n_cat/23.jpg', './dog_n_cat/27.jpg', './dog_n_cat/18.jpg', './dog_n_cat/24.jpg', './dog_n_cat/30.jpg', './dog_n_cat/9.jpeg', './dog_n_cat/25.jpg', './dog_n_cat/19.jpg', './dog_n_cat/12.jpeg', './dog_n_cat/7.jpg', './dog_n_cat/6.jpg']
+num_list :  [20, 20, 21, 21, 21, 22, 21, 21, 22, 22, 22, 21, 21, 21, 21, 21, 21, 19, 20, 24, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29]
+loop done : 100 loops
+final rank_list :  [0.03816474250470489, 0.03810567975496789, 0.03940636728131746, 0.039370739570388724, 0.039429083505275304, 0.040642048117886805, 0.03937256075832016, 0.039407212562074426, 0.04068900019893406, 0.04072239149156583, 0.0407291050807309, 0.039484539585569134, 0.03941407486161404, 0.03946083900557948, 0.039437724342861115, 0.0394399940153853, 0.0394391103178858, 0.03696524201994337, 0.03817389772251434, 0.043386658687887755, 0.050351250027915344, 0.050351250027915344, 0.050351250027915344, 0.050351250027915344, 0.050351250027915344, 0.050351250027915344, 0.050351250027915344, 0.050351250027915344, 0.050351250027915344, 0.050351250027915344]
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/27.jpg
+iminjiui-MacBookPro:CS423 leemin._.ji$ python3 main2.py
+['./dog_n_cat/10.jpeg', './dog_n_cat/26.jpeg', './dog_n_cat/8.jpg', './dog_n_cat/14.jpg', './dog_n_cat/28.jpg', './dog_n_cat/29.jpg', './dog_n_cat/15.jpg', './dog_n_cat/01.jpg', './dog_n_cat/17.jpg', './dog_n_cat/03.jpg', './dog_n_cat/16.jpeg', './dog_n_cat/02.jpg', './dog_n_cat/13.jpg', './dog_n_cat/05.jpg', './dog_n_cat/11.jpg', './dog_n_cat/04.jpg', './dog_n_cat/21.jpg', './dog_n_cat/20.jpg', './dog_n_cat/22.jpg', './dog_n_cat/23.jpg', './dog_n_cat/27.jpg', './dog_n_cat/18.jpg', './dog_n_cat/24.jpg', './dog_n_cat/30.jpg', './dog_n_cat/9.jpeg', './dog_n_cat/25.jpg', './dog_n_cat/19.jpg', './dog_n_cat/12.jpeg', './dog_n_cat/7.jpg', './dog_n_cat/6.jpg']
+num_list :  [20, 20, 21, 21, 21, 22, 21, 21, 22, 22, 22, 21, 21, 21, 21, 21, 21, 19, 20, 24, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29]
+loop done : 100 loops
+final rank_list :  [0.03816474250470489, 0.03810567975496789, 0.03940636728131746, 0.039370739570388724, 0.039429083505275304, 0.040642048117886805, 0.03937256075832016, 0.039407212562074426, 0.04068900019893406, 0.04072239149156583, 0.0407291050807309, 0.039484539585569134, 0.03941407486161404, 0.03946083900557948, 0.039437724342861115, 0.0394399940153853, 0.0394391103178858, 0.03696524201994337, 0.03817389772251434, 0.043386658687887755, 0.050351250027915344, 0.050351250027915344, 0.050351250027915344, 0.050351250027915344, 0.050351250027915344, 0.050351250027915344, 0.050351250027915344, 0.050351250027915344, 0.050351250027915344, 0.050351250027915344]
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+iminjiui-MacBookPro:CS423 leemin._.ji$ python3 main2.py
+['./dog_n_cat/10.jpeg', './dog_n_cat/26.jpeg', './dog_n_cat/8.jpg', './dog_n_cat/14.jpg', './dog_n_cat/28.jpg', './dog_n_cat/29.jpg', './dog_n_cat/15.jpg', './dog_n_cat/01.jpg', './dog_n_cat/17.jpg', './dog_n_cat/03.jpg', './dog_n_cat/16.jpeg', './dog_n_cat/02.jpg', './dog_n_cat/13.jpg', './dog_n_cat/05.jpg', './dog_n_cat/11.jpg', './dog_n_cat/04.jpg', './dog_n_cat/21.jpg', './dog_n_cat/20.jpg', './dog_n_cat/22.jpg', './dog_n_cat/23.jpg', './dog_n_cat/27.jpg', './dog_n_cat/18.jpg', './dog_n_cat/24.jpg', './dog_n_cat/30.jpg', './dog_n_cat/9.jpeg', './dog_n_cat/25.jpg', './dog_n_cat/19.jpg', './dog_n_cat/12.jpeg', './dog_n_cat/7.jpg', './dog_n_cat/6.jpg']
+num_list :  [19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29]
+loop done : 100 loops
+final rank_list :  [0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816]
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+iminjiui-MacBookPro:CS423 leemin._.ji$ python3 main2.py
+['./dog_n_cat/10.jpeg', './dog_n_cat/26.jpeg', './dog_n_cat/8.jpg', './dog_n_cat/14.jpg', './dog_n_cat/28.jpg', './dog_n_cat/29.jpg', './dog_n_cat/15.jpg', './dog_n_cat/01.jpg', './dog_n_cat/17.jpg', './dog_n_cat/03.jpg', './dog_n_cat/16.jpeg', './dog_n_cat/02.jpg', './dog_n_cat/13.jpg', './dog_n_cat/05.jpg', './dog_n_cat/11.jpg', './dog_n_cat/04.jpg', './dog_n_cat/21.jpg', './dog_n_cat/20.jpg', './dog_n_cat/22.jpg', './dog_n_cat/23.jpg', './dog_n_cat/27.jpg', './dog_n_cat/18.jpg', './dog_n_cat/24.jpg', './dog_n_cat/30.jpg', './dog_n_cat/9.jpeg', './dog_n_cat/25.jpg', './dog_n_cat/19.jpg', './dog_n_cat/12.jpeg', './dog_n_cat/7.jpg', './dog_n_cat/6.jpg']
+num_list :  [19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 29, 29, 29, 29, 29, 29, 29, 29, 29, 29]
+loop done : 100 loops
+final rank_list :  [0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.04127725964002267, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816, 0.05719139375853816]
+0.05719139375853816
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.05719139375853816
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.05719139375853816
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.05719139375853816
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.05719139375853816
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.05719139375853816
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.05719139375853816
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.05719139375853816
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.05719139375853816
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.05719139375853816
+./dog_n_cat/27.jpg
+./dog_n_cat/18.jpg
+./dog_n_cat/24.jpg
+./dog_n_cat/30.jpg
+./dog_n_cat/9.jpeg
+./dog_n_cat/25.jpg
+./dog_n_cat/19.jpg
+./dog_n_cat/12.jpeg
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+iminjiui-MacBookPro:CS423 leemin._.ji$ python3 main2.py
+['./dog_n_cat/10.jpeg', './dog_n_cat/26.jpeg', './dog_n_cat/8.jpg', './dog_n_cat/14.jpg', './dog_n_cat/28.jpg', './dog_n_cat/29.jpg', './dog_n_cat/15.jpg', './dog_n_cat/01.jpg', './dog_n_cat/17.jpg', './dog_n_cat/03.jpg', './dog_n_cat/16.jpeg', './dog_n_cat/02.jpg', './dog_n_cat/13.jpg', './dog_n_cat/05.jpg', './dog_n_cat/11.jpg', './dog_n_cat/04.jpg', './dog_n_cat/21.jpg', './dog_n_cat/20.jpg', './dog_n_cat/22.jpg', './dog_n_cat/23.jpg', './dog_n_cat/27.jpg', './dog_n_cat/18.jpg', './dog_n_cat/24.jpg', './dog_n_cat/30.jpg', './dog_n_cat/9.jpeg', './dog_n_cat/25.jpg', './dog_n_cat/19.jpg', './dog_n_cat/12.jpeg', './dog_n_cat/7.jpg', './dog_n_cat/6.jpg']
+num_list :  [13, 10, 11, 15, 10, 12, 9, 13, 10, 12, 11, 12, 10, 11, 13, 11, 9, 13, 11, 12, 6, 8, 8, 5, 4, 5, 10, 11, 5, 8]
+loop done : 100 loops
+final rank_list :  [0.14543292663401677, 0.10927618434272951, 0.11782203585984909, 0.16480659512320972, 0.10887262690017467, 0.13170698223221255, 0.10056976866823855, 0.14649480581622973, 0.10840318394168576, 0.1310948588291712, 0.11770221558843516, 0.12156068942970052, 0.10477834672929524, 0.1128191250053425, 0.13407605180580806, 0.11484295831079329, 0.09615203812666676, 0.13482550951231506, 0.11619007557300783, 0.1231210394510682, 0.0804445918172651, 0.10836468857090509, 0.09565460879752134, 0.07788350896474242, 0.07782677260968515, 0.07985441076159085, 0.10842466764240224, 0.12585866582966038, 0.07694634071382245, 0.09522926138763571]
+0.16480659512320972
+./dog_n_cat/14.jpg
+0.14649480581622973
+./dog_n_cat/01.jpg
+0.14543292663401677
+./dog_n_cat/10.jpeg
+0.13482550951231506
+./dog_n_cat/20.jpg
+0.13407605180580806
+./dog_n_cat/11.jpg
+0.13170698223221255
+./dog_n_cat/29.jpg
+0.1310948588291712
+./dog_n_cat/03.jpg
+0.12585866582966038
+./dog_n_cat/12.jpeg
+0.1231210394510682
+./dog_n_cat/23.jpg
+0.12156068942970052
+./dog_n_cat/02.jpg
+iminjiui-MacBookPro:CS423 leemin._.ji$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   main2.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	npy/30.npy
+
+no changes added to commit (use "git add" and/or "git commit -a")
+iminjiui-MacBookPro:CS423 leemin._.ji$ git add .
+iminjiui-MacBookPro:CS423 leemin._.ji$ git commit -m "add 30.npy (self implemented data)"
+[master 01a8fa7] add 30.npy (self implemented data)
+ 2 files changed, 8 insertions(+), 4 deletions(-)
+ create mode 100644 npy/30.npy
+iminjiui-MacBookPro:CS423 leemin._.ji$ git push origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 6.97 KiB | 6.97 MiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/minji971010/CS423.git
+   da31197..01a8fa7  master -> master
+iminjiui-MacBookPro:CS423 leemin._.ji$ git pull
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 7 (delta 5), reused 7 (delta 5), pack-reused 0
+Unpacking objects: 100% (7/7), done.
+From https://github.com/minji971010/CS423
+   01a8fa7..b9d9fdb  master     -> origin/master
+Updating 01a8fa7..b9d9fdb
+Fast-forward
+ main2.py    |  7 ++++---
+ pagerank.py | 29 ++++++++++++++++++++++++++++-
+ 2 files changed, 32 insertions(+), 4 deletions(-)
+iminjiui-MacBookPro:CS423 leemin._.ji$ python3 main2.py
+['./dog_n_cat/10.jpeg', './dog_n_cat/26.jpeg', './dog_n_cat/8.jpg', './dog_n_cat/14.jpg', './dog_n_cat/28.jpg', './dog_n_cat/29.jpg', './dog_n_cat/15.jpg', './dog_n_cat/01.jpg', './dog_n_cat/17.jpg', './dog_n_cat/03.jpg', './dog_n_cat/16.jpeg', './dog_n_cat/02.jpg', './dog_n_cat/13.jpg', './dog_n_cat/05.jpg', './dog_n_cat/11.jpg', './dog_n_cat/04.jpg', './dog_n_cat/21.jpg', './dog_n_cat/20.jpg', './dog_n_cat/22.jpg', './dog_n_cat/23.jpg', './dog_n_cat/27.jpg', './dog_n_cat/18.jpg', './dog_n_cat/24.jpg', './dog_n_cat/30.jpg', './dog_n_cat/9.jpeg', './dog_n_cat/25.jpg', './dog_n_cat/19.jpg', './dog_n_cat/12.jpeg', './dog_n_cat/7.jpg', './dog_n_cat/6.jpg']
+loop done : 10 loops
+final rank_list :  [0.4508485283195868, 0.5298978832459665, 0.4027675077275797, 0.5615564388905134, 0.4995489284709496, 0.4679811403736588, 0.40444375208385647, 0.5662443057551028, 0.4480092511042078, 0.43596517288398456, 0.5038561900242038, 0.4968649645776701, 0.585739900158035, 0.5667839452171256, 0.584371166265652, 0.5450344530828929, 0.4866624894627454, 0.41247765097571687, 0.4300413309397939, 0.41438225849909494, 0.5273961146392119, 0.4065172823414311, 0.49840496183458805, 0.4192689902076626, 0.46867292632761515, 0.4727037676474023, 0.5887999828021206, 0.5349261627847111, 0.5898587060448033, 0.5898587060448033]
+0.5898587060448033
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.5898587060448033
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.5887999828021206
+./dog_n_cat/19.jpg
+0.585739900158035
+./dog_n_cat/13.jpg
+0.584371166265652
+./dog_n_cat/11.jpg
+0.5667839452171256
+./dog_n_cat/05.jpg
+0.5662443057551028
+./dog_n_cat/01.jpg
+0.5615564388905134
+./dog_n_cat/14.jpg
+0.5450344530828929
+./dog_n_cat/04.jpg
+0.5349261627847111
+./dog_n_cat/12.jpeg
+iminjiui-MacBookPro:CS423 leemin._.ji$ python3 main2.py
+['./dog_n_cat/10.jpeg', './dog_n_cat/26.jpeg', './dog_n_cat/8.jpg', './dog_n_cat/14.jpg', './dog_n_cat/28.jpg', './dog_n_cat/29.jpg', './dog_n_cat/15.jpg', './dog_n_cat/01.jpg', './dog_n_cat/17.jpg', './dog_n_cat/03.jpg', './dog_n_cat/16.jpeg', './dog_n_cat/02.jpg', './dog_n_cat/13.jpg', './dog_n_cat/05.jpg', './dog_n_cat/11.jpg', './dog_n_cat/04.jpg', './dog_n_cat/21.jpg', './dog_n_cat/20.jpg', './dog_n_cat/22.jpg', './dog_n_cat/23.jpg', './dog_n_cat/27.jpg', './dog_n_cat/18.jpg', './dog_n_cat/24.jpg', './dog_n_cat/30.jpg', './dog_n_cat/9.jpeg', './dog_n_cat/25.jpg', './dog_n_cat/19.jpg', './dog_n_cat/12.jpeg', './dog_n_cat/7.jpg', './dog_n_cat/6.jpg']
+loop done : 10 loops
+final rank_list :  [0.5296076422424126, 0.6162135885756104, 0.4769303965784238, 0.6508984911113957, 0.5829634760229951, 0.5483780178069486, 0.47876687872171564, 0.6560344868000376, 0.526496949051188, 0.5133015372360639, 0.5876824830695624, 0.580022943072181, 0.6773937300749082, 0.6566257121975219, 0.675894154346067, 0.632797113592183, 0.5688451793435351, 0.48756876479558425, 0.506811415488926, 0.48965544010253786, 0.6134726675662427, 0.48103862465025626, 0.5817101538016061, 0.4950093107886566, 0.5491359338868231, 0.5535520967681551, 0.6807463362219874, 0.6217225381209469, 0.681906266349474, 0.681906266349474]
+0.681906266349474
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.681906266349474
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.6807463362219874
+./dog_n_cat/19.jpg
+0.6773937300749082
+./dog_n_cat/13.jpg
+0.675894154346067
+./dog_n_cat/11.jpg
+0.6566257121975219
+./dog_n_cat/05.jpg
+0.6560344868000376
+./dog_n_cat/01.jpg
+0.6508984911113957
+./dog_n_cat/14.jpg
+0.632797113592183
+./dog_n_cat/04.jpg
+0.6217225381209469
+./dog_n_cat/12.jpeg
+iminjiui-MacBookPro:CS423 leemin._.ji$ python3 main2.py
+['./dog_n_cat/10.jpeg', './dog_n_cat/26.jpeg', './dog_n_cat/8.jpg', './dog_n_cat/14.jpg', './dog_n_cat/28.jpg', './dog_n_cat/29.jpg', './dog_n_cat/15.jpg', './dog_n_cat/01.jpg', './dog_n_cat/17.jpg', './dog_n_cat/03.jpg', './dog_n_cat/16.jpeg', './dog_n_cat/02.jpg', './dog_n_cat/13.jpg', './dog_n_cat/05.jpg', './dog_n_cat/11.jpg', './dog_n_cat/04.jpg', './dog_n_cat/21.jpg', './dog_n_cat/20.jpg', './dog_n_cat/22.jpg', './dog_n_cat/23.jpg', './dog_n_cat/27.jpg', './dog_n_cat/18.jpg', './dog_n_cat/24.jpg', './dog_n_cat/30.jpg', './dog_n_cat/9.jpeg', './dog_n_cat/25.jpg', './dog_n_cat/19.jpg', './dog_n_cat/12.jpeg', './dog_n_cat/7.jpg', './dog_n_cat/6.jpg']
+loop done : 10 loops
+final rank_list :  [0.7772849493451812, 0.850142863920871, 0.7329698136395586, 0.8793218033934105, 0.8221709524926379, 0.793075671314469, 0.7345147682850626, 0.8836424990383092, 0.7746680549124887, 0.7635673138257436, 0.8261408532539334, 0.8196972066633024, 0.9016111257644095, 0.884139871924683, 0.9003495962161802, 0.8640938811451713, 0.8102938274570323, 0.7419194222473628, 0.7581074492799584, 0.7436748538048717, 0.847837043163588, 0.7364258919181039, 0.8211165855905033, 0.7481788384573553, 0.7937132740119857, 0.7974284048036122, 0.9044315313209756, 0.854777309849465, 0.9054073314100025, 0.9054073314100025]
+0.9054073314100025
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.9054073314100025
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.9044315313209756
+./dog_n_cat/19.jpg
+0.9016111257644095
+./dog_n_cat/13.jpg
+0.9003495962161802
+./dog_n_cat/11.jpg
+0.884139871924683
+./dog_n_cat/05.jpg
+0.8836424990383092
+./dog_n_cat/01.jpg
+0.8793218033934105
+./dog_n_cat/14.jpg
+0.8640938811451713
+./dog_n_cat/04.jpg
+0.854777309849465
+./dog_n_cat/12.jpeg
+iminjiui-MacBookPro:CS423 leemin._.ji$ python3 main2.py
+['./dog_n_cat/10.jpeg', './dog_n_cat/26.jpeg', './dog_n_cat/8.jpg', './dog_n_cat/14.jpg', './dog_n_cat/28.jpg', './dog_n_cat/29.jpg', './dog_n_cat/15.jpg', './dog_n_cat/01.jpg', './dog_n_cat/17.jpg', './dog_n_cat/03.jpg', './dog_n_cat/16.jpeg', './dog_n_cat/02.jpg', './dog_n_cat/13.jpg', './dog_n_cat/05.jpg', './dog_n_cat/11.jpg', './dog_n_cat/04.jpg', './dog_n_cat/21.jpg', './dog_n_cat/20.jpg', './dog_n_cat/22.jpg', './dog_n_cat/23.jpg', './dog_n_cat/27.jpg', './dog_n_cat/18.jpg', './dog_n_cat/24.jpg', './dog_n_cat/30.jpg', './dog_n_cat/9.jpeg', './dog_n_cat/25.jpg', './dog_n_cat/19.jpg', './dog_n_cat/12.jpeg', './dog_n_cat/7.jpg', './dog_n_cat/6.jpg']
+loop done : 100 loops
+final rank_list :  [0.7774789854940465, 0.8503878839734498, 0.7331328393124169, 0.8795872420408557, 0.8223963985943666, 0.7932807573630347, 0.7346788750733954, 0.8839109611861113, 0.7748602598327967, 0.7637517507620515, 0.8263690773797017, 0.8199209217078095, 0.9018921618479356, 0.8844086821199348, 0.9006297495170823, 0.86434866372421, 0.8105109622832772, 0.742088710602679, 0.7582880655577982, 0.7438453705614403, 0.8480804496681513, 0.7365913360565909, 0.8213412938761563, 0.7483525069747337, 0.7939188062368485, 0.7976365367717104, 0.9047145410443758, 0.8550255729559572, 0.9056910239706492, 0.9056910239706492]
+0.9056910239706492
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.9056910239706492
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.9047145410443758
+./dog_n_cat/19.jpg
+0.9018921618479356
+./dog_n_cat/13.jpg
+0.9006297495170823
+./dog_n_cat/11.jpg
+0.8844086821199348
+./dog_n_cat/05.jpg
+0.8839109611861113
+./dog_n_cat/01.jpg
+0.8795872420408557
+./dog_n_cat/14.jpg
+0.86434866372421
+./dog_n_cat/04.jpg
+0.8550255729559572
+./dog_n_cat/12.jpeg
+iminjiui-MacBookPro:CS423 leemin._.ji$ python3 main2.py
+['./dog_n_cat/10.jpeg', './dog_n_cat/26.jpeg', './dog_n_cat/8.jpg', './dog_n_cat/14.jpg', './dog_n_cat/28.jpg', './dog_n_cat/29.jpg', './dog_n_cat/15.jpg', './dog_n_cat/01.jpg', './dog_n_cat/17.jpg', './dog_n_cat/03.jpg', './dog_n_cat/16.jpeg', './dog_n_cat/02.jpg', './dog_n_cat/13.jpg', './dog_n_cat/05.jpg', './dog_n_cat/11.jpg', './dog_n_cat/04.jpg', './dog_n_cat/21.jpg', './dog_n_cat/20.jpg', './dog_n_cat/22.jpg', './dog_n_cat/23.jpg', './dog_n_cat/27.jpg', './dog_n_cat/18.jpg', './dog_n_cat/24.jpg', './dog_n_cat/30.jpg', './dog_n_cat/9.jpeg', './dog_n_cat/25.jpg', './dog_n_cat/19.jpg', './dog_n_cat/12.jpeg', './dog_n_cat/7.jpg', './dog_n_cat/6.jpg']
+loop done : 100 loops
+final rank_list :  [0.47755466507407696, 0.5636211820747067, 0.42520552218678115, 0.598090048014655, 0.5305781694590064, 0.49620812844503365, 0.42703056571207076, 0.6031940539053245, 0.4744633469860989, 0.4613501234327485, 0.5352677839415605, 0.5276559517601377, 0.6244202600986581, 0.6037815968267772, 0.6229300245498945, 0.580101415802285, 0.5165478092744089, 0.43577762881209997, 0.45490042572334205, 0.43785130716081017, 0.5608973330246363, 0.42928816196103536, 0.5293326536157935, 0.44317183100397944, 0.49696132380788555, 0.5013499804047596, 0.6277519843759254, 0.5690958188609059, 0.6289046898224172, 0.6289046898224172]
+0.6289046898224172
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.6289046898224172
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.6277519843759254
+./dog_n_cat/19.jpg
+0.6244202600986581
+./dog_n_cat/13.jpg
+0.6229300245498945
+./dog_n_cat/11.jpg
+0.6037815968267772
+./dog_n_cat/05.jpg
+0.6031940539053245
+./dog_n_cat/01.jpg
+0.598090048014655
+./dog_n_cat/14.jpg
+0.580101415802285
+./dog_n_cat/04.jpg
+0.5690958188609059
+./dog_n_cat/12.jpeg
+iminjiui-MacBookPro:CS423 leemin._.ji$ python3 main2.py
+['./dog_n_cat/10.jpeg', './dog_n_cat/26.jpeg', './dog_n_cat/8.jpg', './dog_n_cat/14.jpg', './dog_n_cat/28.jpg', './dog_n_cat/29.jpg', './dog_n_cat/15.jpg', './dog_n_cat/01.jpg', './dog_n_cat/17.jpg', './dog_n_cat/03.jpg', './dog_n_cat/16.jpeg', './dog_n_cat/02.jpg', './dog_n_cat/13.jpg', './dog_n_cat/05.jpg', './dog_n_cat/11.jpg', './dog_n_cat/04.jpg', './dog_n_cat/21.jpg', './dog_n_cat/20.jpg', './dog_n_cat/22.jpg', './dog_n_cat/23.jpg', './dog_n_cat/27.jpg', './dog_n_cat/18.jpg', './dog_n_cat/24.jpg', './dog_n_cat/30.jpg', './dog_n_cat/9.jpeg', './dog_n_cat/25.jpg', './dog_n_cat/19.jpg', './dog_n_cat/12.jpeg', './dog_n_cat/7.jpg', './dog_n_cat/6.jpg']
+loop done : 100 loops
+final rank_list :  [0.3846795094038504, 0.4594803791466043, 0.3391825896408631, 0.48943745468778904, 0.4307625203472632, 0.40089133407722427, 0.34076874471913876, 0.4938733734759448, 0.38199282833796533, 0.37059605568926385, 0.4348382893487054, 0.42822280533298596, 0.5123211826813384, 0.49438401016797606, 0.511026011004201, 0.4738034383262585, 0.4185686593524664, 0.34837086399128436, 0.36499058895197367, 0.350173108922947, 0.45711306738479857, 0.3427308336805091, 0.42968003587365516, 0.3547972046203854, 0.4015459401910875, 0.4053601450861928, 0.5152168020507246, 0.4642384152261912, 0.5162186245126952, 0.5162186245126952]
+0.5162186245126952
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.5162186245126952
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.5152168020507246
+./dog_n_cat/19.jpg
+0.5123211826813384
+./dog_n_cat/13.jpg
+0.511026011004201
+./dog_n_cat/11.jpg
+0.49438401016797606
+./dog_n_cat/05.jpg
+0.4938733734759448
+./dog_n_cat/01.jpg
+0.48943745468778904
+./dog_n_cat/14.jpg
+0.4738034383262585
+./dog_n_cat/04.jpg
+0.4642384152261912
+./dog_n_cat/12.jpeg
+iminjiui-MacBookPro:CS423 leemin._.ji$ python3 main2.py
+['./dog_n_cat/10.jpeg', './dog_n_cat/26.jpeg', './dog_n_cat/8.jpg', './dog_n_cat/14.jpg', './dog_n_cat/28.jpg', './dog_n_cat/29.jpg', './dog_n_cat/15.jpg', './dog_n_cat/01.jpg', './dog_n_cat/17.jpg', './dog_n_cat/03.jpg', './dog_n_cat/16.jpeg', './dog_n_cat/02.jpg', './dog_n_cat/13.jpg', './dog_n_cat/05.jpg', './dog_n_cat/11.jpg', './dog_n_cat/04.jpg', './dog_n_cat/21.jpg', './dog_n_cat/20.jpg', './dog_n_cat/22.jpg', './dog_n_cat/23.jpg', './dog_n_cat/27.jpg', './dog_n_cat/18.jpg', './dog_n_cat/24.jpg', './dog_n_cat/30.jpg', './dog_n_cat/9.jpeg', './dog_n_cat/25.jpg', './dog_n_cat/19.jpg', './dog_n_cat/12.jpeg', './dog_n_cat/7.jpg', './dog_n_cat/6.jpg']
+loop done : 100 loops
+final rank_list :  [0.9605737027723823, 0.9764897258834295, 0.9508929326300096, 0.982863949983933, 0.9703791805659483, 0.9640232318629002, 0.9512304324608318, 0.9838078185003529, 0.960002034580773, 0.9575770454397122, 0.971246416920891, 0.9698387836026279, 0.9877331172124, 0.9839164710523843, 0.9874575324175041, 0.9795373661275639, 0.9677845880956532, 0.9528480006314229, 0.9563843221672992, 0.9532314797551652, 0.9759860126399669, 0.9516479229708019, 0.9701488510529555, 0.9542153882877963, 0.9641625180245813, 0.964974099139474, 0.9883492430002745, 0.9775021340608523, 0.9885624093646861, 0.9885624093646861]
+0.9885624093646861
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.9885624093646861
+./dog_n_cat/7.jpg
+./dog_n_cat/6.jpg
+0.9883492430002745
+./dog_n_cat/19.jpg
+0.9877331172124
+./dog_n_cat/13.jpg
+0.9874575324175041
+./dog_n_cat/11.jpg
+0.9839164710523843
+./dog_n_cat/05.jpg
+0.9838078185003529
+./dog_n_cat/01.jpg
+0.982863949983933
+./dog_n_cat/14.jpg
+0.9795373661275639
+./dog_n_cat/04.jpg
+0.9775021340608523
+./dog_n_cat/12.jpeg
+iminjiui-MacBookPro:CS423 leemin._.ji$ cd ..
+iminjiui-MacBookPro:desktop leemin._.ji$ git clone https://github.com/lovit/pagerank.git
+Cloning into 'pagerank'...
+remote: Enumerating objects: 47, done.
+remote: Total 47 (delta 0), reused 0 (delta 0), pack-reused 47
+Unpacking objects: 100% (47/47), done.
+iminjiui-MacBookPro:desktop leemin._.ji$ cd ..
+iminjiui-MacBookPro:~ leemin._.ji$ python3 ./image_similarity.py
+/Library/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python: can't open file './image_similarity.py': [Errno 2] No such file or directory
+iminjiui-MacBookPro:~ leemin._.ji$ cd desktop
+iminjiui-MacBookPro:desktop leemin._.ji$ cd cnf_example/../CS423
+iminjiui-MacBookPro:CS423 leemin._.ji$ cd ..
+iminjiui-MacBookPro:desktop leemin._.ji$ cd CS423
+iminjiui-MacBookPro:CS423 leemin._.ji$ cd ..
+iminjiui-MacBookPro:desktop leemin._.ji$ cd 수업자료/./19 1_Spring
+-bash: cd: 수업자료/./19: No such file or directory
+iminjiui-MacBookPro:desktop leemin._.ji$ cd 수업자료/./19_1_Spring
+iminjiui-MacBookPro:19_1_Spring leemin._.ji$ cd 수업자료/./19_1_Spring
+-bash: cd: 수업자료/./19_1_Spring: No such file or directory
+iminjiui-MacBookPro:19_1_Spring leemin._.ji$ cd ../CS423/../cnf_example
+-bash: cd: ../CS423/../cnf_example: No such file or directory
+iminjiui-MacBookPro:19_1_Spring leemin._.ji$ cd ..
+iminjiui-MacBookPro:수업자료 leemin._.ji$ cd ../CS423/../cnf_example
+iminjiui-MacBookPro:cnf_example leemin._.ji$ ls
+UF125.538.100		uf100-0461.cnf		uf50-218
+UF225.960.100		uf100-0462.cnf		uuf100-01.cnf
+UF250.1065.100		uf100-0463.cnf		uuf100-010.cnf
+UF75.325.100		uf100-0464.cnf		uuf100-02.cnf
+UUF100.430.1000		uf100-0465.cnf		uuf100-03.cnf
+UUF175.753.100		uf100-0466.cnf		uuf100-04.cnf
+UUF50.218.1000		uf100-0467.cnf		uuf100-05.cnf
+__pycache__		uf100-0468.cnf		uuf100-06.cnf
+simple_v3_c2.cnf	uf100-0469.cnf		uuf100-07.cnf
+solvepy3.py		uf100-0470.cnf		uuf100-08.cnf
+uf100-01.cnf		uf100-08.cnf		uuf100-09.cnf
+uf100-0430.cnf		uf100-430		uuf175-086.cnf
+uf100-0431.cnf		uf20-069.cnf		uuf175-087.cnf
+uf100-0432.cnf		uf20-070.cnf		uuf175-088.cnf
+uf100-0433.cnf		uf20-071.cnf		uuf175-089.cnf
+uf100-0434.cnf		uf20-072.cnf		uuf175-090.cnf
+uf100-0435.cnf		uf20-073.cnf		uuf175-091.cnf
+uf100-0436.cnf		uf20-074.cnf		uuf50-01.cnf
+uf100-0437.cnf		uf20-075.cnf		uuf50-010.cnf
+uf100-0438.cnf		uf20-076.cnf		uuf50-011.cnf
+uf100-0439.cnf		uf20-91			uuf50-012.cnf
+uf100-0440.cnf		uf200-860		uuf50-013.cnf
+uf100-0450.cnf		uf250-0100.cnf		uuf50-014.cnf
+uf100-0451.cnf		uf250-090.cnf		uuf50-02.cnf
+uf100-0452.cnf		uf250-091.cnf		uuf50-03.cnf
+uf100-0453.cnf		uf250-092.cnf		uuf50-04.cnf
+uf100-0454.cnf		uf250-093.cnf		uuf50-05.cnf
+uf100-0455.cnf		uf250-094.cnf		uuf50-06.cnf
+uf100-0456.cnf		uf250-095.cnf		uuf50-07.cnf
+uf100-0457.cnf		uf250-096.cnf		uuf50-08.cnf
+uf100-0458.cnf		uf250-097.cnf		uuf50-09.cnf
+uf100-0459.cnf		uf250-098.cnf
+uf100-0460.cnf		uf250-099.cnf
+iminjiui-MacBookPro:cnf_example leemin._.ji$ ls -a
+.			uf100-0459.cnf		uf250-099.cnf
+..			uf100-0460.cnf		uf50-218
+.DS_Store		uf100-0461.cnf		uuf100-01.cnf
+UF125.538.100		uf100-0462.cnf		uuf100-010.cnf
+UF225.960.100		uf100-0463.cnf		uuf100-02.cnf
+UF250.1065.100		uf100-0464.cnf		uuf100-03.cnf
+UF75.325.100		uf100-0465.cnf		uuf100-04.cnf
+UUF100.430.1000		uf100-0466.cnf		uuf100-05.cnf
+UUF175.753.100		uf100-0467.cnf		uuf100-06.cnf
+UUF50.218.1000		uf100-0468.cnf		uuf100-07.cnf
+__pycache__		uf100-0469.cnf		uuf100-08.cnf
+simple_v3_c2.cnf	uf100-0470.cnf		uuf100-09.cnf
+solvepy3.py		uf100-08.cnf		uuf175-086.cnf
+uf100-01.cnf		uf100-430		uuf175-087.cnf
+uf100-0430.cnf		uf20-069.cnf		uuf175-088.cnf
+uf100-0431.cnf		uf20-070.cnf		uuf175-089.cnf
+uf100-0432.cnf		uf20-071.cnf		uuf175-090.cnf
+uf100-0433.cnf		uf20-072.cnf		uuf175-091.cnf
+uf100-0434.cnf		uf20-073.cnf		uuf50-01.cnf
+uf100-0435.cnf		uf20-074.cnf		uuf50-010.cnf
+uf100-0436.cnf		uf20-075.cnf		uuf50-011.cnf
+uf100-0437.cnf		uf20-076.cnf		uuf50-012.cnf
+uf100-0438.cnf		uf20-91			uuf50-013.cnf
+uf100-0439.cnf		uf200-860		uuf50-014.cnf
+uf100-0440.cnf		uf250-0100.cnf		uuf50-02.cnf
+uf100-0450.cnf		uf250-090.cnf		uuf50-03.cnf
+uf100-0451.cnf		uf250-091.cnf		uuf50-04.cnf
+uf100-0452.cnf		uf250-092.cnf		uuf50-05.cnf
+uf100-0453.cnf		uf250-093.cnf		uuf50-06.cnf
+uf100-0454.cnf		uf250-094.cnf		uuf50-07.cnf
+uf100-0455.cnf		uf250-095.cnf		uuf50-08.cnf
+uf100-0456.cnf		uf250-096.cnf		uuf50-09.cnf
+uf100-0457.cnf		uf250-097.cnf
+uf100-0458.cnf		uf250-098.cnf
+iminjiui-MacBookPro:cnf_example leemin._.ji$ 

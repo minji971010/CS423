@@ -102,7 +102,7 @@ else:
 
 rank_list_per_prop = []
 for i in range(prop_dim):
-    rank_list = get_weighted_ranks_by_dict(imgs, sim_dict_lst[i], df=0.5, max_loop=10)
+    rank_list = get_weighted_ranks_by_dict(imgs, sim_dict_lst[i], df=0.1, max_loop=100)
    # rank_list = get_ranks_by_dict(imgs, sim_dict_lst[i], threshold=0.8, max_loop=100)
     _max_idx = 0
     _max = rank_list[0]
