@@ -160,10 +160,10 @@ def nnew_data(): # Group C size is small. Case 3.
 
     return G, 13, 13, 4
 def main():
-  #G = data() # Case 1. size A = size B = size C
-  #G = new_data() # Case 2. size C >> size A = size B
+  #G, aSize, bSize, abSize = data() # Case 1. size A = size B = size C
+  #G, aSize, bSize, abSize = new_data() # Case 2. size C >> size A = size B
   G, aSize, bSize, abSize = nnew_data() # Case 3. Size C << size A = size B
-  df = 0.2
+  df = 0.85
   max_iter = 100
   cve = 0.0001
   output = pagerank(G, df=df, max_iter=max_iter, converge_error=cve) # , df=df)
